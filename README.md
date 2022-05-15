@@ -1,4 +1,4 @@
-# wesley.github.io
+# wesleydeal.github.io
 
 
 Personal website. Incomplete.
