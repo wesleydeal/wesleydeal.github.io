@@ -6,14 +6,23 @@ on:
     branches:
      - master
 
+  workflow_dispatch:
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
-    name: Publish site
+    name: Build and deploysite
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout Master
         uses: actions/checkout@v4
-      - name: Build and Deploy
+      - name: Build
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
           PAGES_BRANCH: gh-pages
