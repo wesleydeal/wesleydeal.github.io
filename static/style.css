@@ -84,7 +84,7 @@ nav a:last-child{
     }
 }
 
-.content{
+.content, footer{
     max-width: 780px;
     margin: 0 auto;
     padding: 10px;
