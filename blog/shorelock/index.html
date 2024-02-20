@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Wesley Deal</title>
+<link rel="stylesheet" href="/style.css">
+<header>
+	<nav>
+		<a href="/">Wesley Deal</a>
+	</nav>
+</header>
+<section class="content">
+	
+<h1 class="title">
+	Fix a locked Shoretel&#x2F;Shoreware&#x2F;Mitel Director
+</h1>
+<p class="subtitle">2020-09-15</p>
+<p>Let's say, for the sake of argument, that you're overworked and understaffed. A while ago, something popped up on the top of your Shoretel management page. You noticed it when you were hastily onboarding a new employee:</p>
+<blockquote style="color: orangered">
+    Due to license violation, access to Director will be locked in 38 days. Take proper action before the grace period has expired. Note that there are additional charges if you need to recover from a locked Director.
+</blockquote>
+<p>You made a mental note and moved onto the next thing.</p>
+<p>Now it's 6 weeks later and you get a ticket to change someone's voicemail PIN. You go into the director but find that you're now locked out entirely.</p>
+<p>But you can fix it: Shoretel stores your users' licensing status in a MySQL database that you can edit directly.</p>
+<p>A note: this is all bad practice. Don't let your licenses expire. Don't run an old version of Shoretel on an older version of Windows and leave UAC and updates both disabled because that's what your vendor says you have to do. Don't poke around haphazardly in your production database with baby's first SQL Management app from an insecure RDP connection, reading instructions from some random website. Now I'm going to give you instructions to do all of the above.</p>
+<h2 id="the-process">The Process</h2>
+<ul>
+<li>
+<p>Remote in to your Shoretel server. If Shoretel is holding your server hostage on an old version of Windows, you might need to disable CredSSP remediation on your box with <code>reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters /v AllowEncryptionOracle /t REG_DWORD /d 2</code></p>
+</li>
+<li>
+<p>Install <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench</a> on the server.</p>
+</li>
+<li>
+<p>Add a connection with these details:</p>
+<ul>
+<li>
+<p>Hostname: <code>localhost</code></p>
+</li>
+<li>
+<p>Port: <code>4308</code></p>
+</li>
+<li>
+<p>Username: <code>root</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Connect with the password <code>shorewaredba</code></p>
+</li>
+<li>
+<p>Run this query:</p>
+<pre data-lang="sql" style="background-color:#212733;color:#ccc9c2;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#ffa759;">select</span><span> UserDNID,UserDN,GuiLoginName,LicenseTypeID,ClientType </span><span style="color:#ffa759;">from</span><span> users </span><span style="color:#ffa759;">order by</span><span> licensetypeID
+</span></code></pre>
+</li>
+<li>
+<p>In the table that appears, edit the license type  numbers for LicenseTypeID and ClientType to reduce your license count. Refer to the locked director for which license you're over on. Refer to this table for the meaning of license type numbers.</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span># | LicenseTypeID   | ClientType 
+</span><span>--+-----------------+------------
+</span><span>0 | ?               | None
+</span><span>1 | Mailbox Only    | ?
+</span><span>2 | Phone Only      | ?
+</span><span>3 | Phone &amp; Mailbox | ?
+</span><span>4 | N/A             | ?
+</span><span>5 | N/A             | Shoretel Connect  
+</span></code></pre>
+</li>
+<li>
+<p>In the bottom right corner, click <strong>Apply</strong>, review the changes, and <strong>Apply</strong> again. Exit MySQL Workbench.</p>
+</li>
+<li>
+<p>Restart the Shoretel-Director service (or, if preferred, the entire server).</p>
+</li>
+</ul>
+
+
+</section>
+<footer>
+	footer
+</footer>
+
+</html>
