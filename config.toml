@@ -10,7 +10,6 @@ build_search_index = true
 output_dir = "public"
 
 author = "Wesley Deal"
-build_search_index = true
 
 
 [markdown]
