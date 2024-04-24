@@ -1,0 +1,3 @@
+[submodule "static/resume"]
+	path = static/resume
+	url = https://github.com/wesleydeal/resume
