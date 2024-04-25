@@ -128,7 +128,7 @@ footer {
 h1{
 	font-size: 1.75em;
 	line-height: 1.1;
-	margin: 0 0 .1em;
+	margin: 0 0 .5em;
 }
 
 .landing h1.title{
@@ -204,11 +204,19 @@ small{
 	font-size: .9rem;
 }
 
-.author{
+.article-signoff{
 	margin: 2em 0;
-	font-size: 1.25em;
 	text-align: right;
-	font-style: italic;
+	font-variant-numeric: tabular-nums;
+}
+
+.article-signoff .author{
+	font-size: 1.25em;
+	margin-bottom: 0.5em;
+}
+
+.article-signoff p{
+	margin: 0;
 }
 
 .landing p{

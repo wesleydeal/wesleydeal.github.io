@@ -4,7 +4,12 @@
 <h1 class="title">
 	{{ page.title }}
 </h1>
-<p class="subtitle">{{ page.date }}</p>
 {{page.content | safe}}
-<p class="author">—Wesley Deal</p>
+<section class="article-signoff">
+	<p class="author">—Wesley Deal</p>
+	<p class="created-at">written <time datetime="{{ page.date }}">{{ page.date }}</time></p>
+	{% if page.updated %}
+	<p class="updated-at">updated <time datetime="{{ page.updated }}">{{ page.updated }}</time></p>
+	{% endif %}
+</section>
 {%endblock content%}
