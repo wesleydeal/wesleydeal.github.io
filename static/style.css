@@ -213,6 +213,7 @@ small{
 
 .landing p{
 	text-align: center;
+	max-width: 500px;
 }
 
 @media (prefers-color-scheme:dark){
@@ -241,6 +242,4 @@ small{
 		border-bottom-color: #c33000;
 	}
 }
-
-
 
