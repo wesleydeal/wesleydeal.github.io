@@ -4,6 +4,11 @@
 
 html{
 	margin-left: calc(100vw - 100%);
+	box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
 }
 
 body{
@@ -172,7 +177,6 @@ code{
 
 pre{
 	padding: 10px;
-	box-sizing: border-box;
 	overflow: auto;
 }
 
@@ -182,6 +186,12 @@ code.block{
 	word-break: break-all;
 	margin: 0 0 16px;
 	font-size: .85em;
+}
+
+blockquote{
+	padding: 10px 20px;
+	margin: 0;
+	border-left: 2px solid #7fa;
 }
 
 @media print{
