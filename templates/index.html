@@ -1,13 +1,18 @@
 {% extends "base.html" %}
 
+{% block breadcrumb %}
+{% endblock breadcrumb %}
+
 {% block content %}
-<h1 class="title">
-	Hello, I'm Wesley.
-</h1>
-<p>This page is 🚧 <b>under construction</b> 🚧 as I learn how to use Zola in my spare time.</p>
-<h2>Links</h2>
-<ul>
-	<li><a href="resume">resume</a></li>
-	<li><a href="blog">blog</a></li>
-</ul>
+<article class="landing">
+	<h1 class="title">
+		Hello, I'm Wesley.
+	</h1>
+	<p>This page is 🚧 <b>under construction</b> 🚧 as a playground for Zola, HTML/CSS, design principles, and CI/CD with GitHub Actions. Below, you will find a handful of mostly incomplete pages hosted here.</p>
+	<h2>Links</h2>
+	<ul>
+		<li><a href="resume">Resume</a></li>
+		<li><a href="blog">Blog</a></li>
+	</ul>
+</article>
 {% endblock content %}
