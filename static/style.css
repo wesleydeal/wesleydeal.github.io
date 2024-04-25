@@ -217,6 +217,9 @@ small{
 .article-signoff{
 	margin: 2em 0;
 	text-align: right;
+}
+
+time {
 	font-variant-numeric: tabular-nums;
 }
 
@@ -232,6 +235,19 @@ small{
 .landing p{
 	text-align: center;
 	max-width: 500px;
+}
+
+ul.blog-listing{
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.blog-listing li{
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	gap: 1em;
+	margin: 10px 0;
 }
 
 @media screen and (prefers-color-scheme:dark){
