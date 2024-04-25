@@ -5,11 +5,5 @@
 	{{ page.title }}
 </h1>
 {{page.content | safe}}
-<section class="article-signoff">
-	<p class="author">—Wesley Deal</p>
-	<p class="created-at">written <time datetime="{{ page.date }}">{{ page.date }}</time></p>
-	{% if page.updated %}
-	<p class="updated-at">updated <time datetime="{{ page.updated }}">{{ page.updated }}</time></p>
-	{% endif %}
-</section>
+{{ macros::signoff(date=page.date, updated=page.updated) }}
 {%endblock content%}
