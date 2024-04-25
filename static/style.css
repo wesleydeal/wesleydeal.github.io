@@ -4,11 +4,15 @@
 
 body{
 	margin: 0;
-	padding: 0 0 500px 0;
+	padding: 0;
 	font: 1em/1.5 "Red Hat Text",Roboto,"Trebuchet MS","Helvetica Neue",Helvetica,Ubuntu,sans-serif;
 	color: #1d1d1d;
 	background: #fafafa;
 	word-wrap: break-word;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: space-around;
 }
 
 ::selection{
@@ -101,6 +105,11 @@ nav a:last-child{
 	padding: 10px;
 }
 
+footer {
+	font-style: italic;
+	font-size: .85em;
+}
+
 h1{
 	font-size: 1.75em;
 	line-height: 1.1;
@@ -167,6 +176,13 @@ small{
 
 .meta{
 	font-size: .9rem;
+}
+
+.author{
+	margin: 2em 0;
+	font-size: 1.25em;
+	text-align: right;
+	font-style: italic;
 }
 
 @media (prefers-color-scheme:dark){
