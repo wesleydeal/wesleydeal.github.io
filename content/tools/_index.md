@@ -1,6 +1,6 @@
 +++
 title = "Tools"
 sort_by = "title"
-template = "blog.html"
+template = "list.html"
 page_template = "page.html"
 +++
