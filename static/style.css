@@ -250,6 +250,17 @@ ul.blog-listing li{
 	margin: 10px 0;
 }
 
+ul.blog-listing li time{
+	flex-shrink: 0;
+}
+
+@media screen and (max-width: 500px){
+	ul.blog-listing li{
+		flex-direction: column-reverse;
+		gap: 0;
+	}
+}
+
 @media screen and (prefers-color-scheme:dark){
 	html{
 		color-scheme: dark;
