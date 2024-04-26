@@ -154,12 +154,19 @@ header nav a{
 
 header nav a:link:first-child, header nav a:visited:first-child{
 	color: var(--color-logo-fg);
+	transition: background-position 300ms ease-in-out;
 	font-weight: 500;
 	background: var(--color-logo-bg);
+	background: linear-gradient(to bottom right, var(--color-logo-bg) 0%, var(--color-logo-bg) 34%, var(--color-hover) 66%);
+	background-size: 300% 300%;
 	box-shadow: 0 0 0 2px var(--color-logo-fg);
 	padding: 3px 15px;
 	font-size: 1.2em;
 	font-family: 'Red Hat Mono', monospace;
+}
+
+header nav a:hover:first-child, header nav a:hover:first-child{
+	background-position: bottom right;
 }
 
 @media (max-width: 370px) {
