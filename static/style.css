@@ -179,7 +179,7 @@ h3,h4,h5,h6{
 }
 
 p,ol,ul{
-	margin: 5px 0 16px;
+	margin: 0.8em 0;
 }
 
 ol,ul{
