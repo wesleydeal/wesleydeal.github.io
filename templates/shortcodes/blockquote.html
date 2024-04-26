@@ -1,0 +1,15 @@
+<blockquote>
+	{{ body | markdown | safe }}
+</blockquote>
+	<div class="quote-signoff">
+		{% if url %}
+		<a href="{{ url }}">
+		{% endif %}
+			<p class="author">—{{author}}</p>
+			{% if date %}
+			<p class="date"><time datetime="{{ date }}">{{ date }}</time>
+			{% endif %}
+		{% if url %}
+		</a>
+		{% endif %}
+	</div>
