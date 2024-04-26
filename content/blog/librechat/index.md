@@ -1,6 +1,7 @@
 +++
 title = "Hosting LibreChat, a FOSS LLM chat tool, with Caddy reverse proxy and Google SSO"
 date = 2024-04-25
+updated = 2024-04-26
 +++
 
 Do you want to deploy an inexpensive ChatGPT-like web app for your school, business, or friends?
@@ -15,12 +16,12 @@ LibreChat has a vast array of features and can utilize multiple LLM backends, bu
    2. alternatively, consider a custom endpoint using OpenRouter and one of their free models
 2. A spare, preferably unused server with Linux, open to inbound internet traffic on ports 80 and 443
    1. a virtual machine or Raspberry Pi with Debian, Ubuntu, Red Hat, Oracle, or Rocky Linux
-   2. Don’t care for on-prem? Inexpensive Virtual Private Servers can be found at lowendbox.com or on Oracle Cloud’s free tier, or use your cloud compute flavor of choice.
+   2. Don’t care for on-prem? Inexpensive Virtual Private Servers can be found at [lowendbox.com](https://lowendbox.com/) or on Oracle Cloud’s [free tier](https://www.oracle.com/cloud/free/), or use your cloud compute flavor of choice.
 3. A subdomain with an A record pointed at your server
    1. The subdomain makes it easy for us to set up secure access and single sign-on.
 4. A Google Workspace domain to use for single sign-on
 
-(The last three are optional; if you are so inclined, LibreChat can run locally on your Windows computer for testing. This configuration is out of scope of this document but is explained in the LibreChat docs.)
+(The last three are optional; if you are so inclined, LibreChat can run locally on your Windows computer for testing.)
 
 ## Prepare your server
 
@@ -76,7 +77,7 @@ docker compose up -d
 exit
 ```
 
-Configure Caddy to serve LibreChat. Open /etc/caddy/Caddyfile with an editor
+Configure Caddy to serve LibreChat. Open `/etc/caddy/Caddyfile` with an editor
 
 ```sh
 nano /etc/caddy/Caddyfile
@@ -162,12 +163,10 @@ docker compose restart
 
 ![Google SSO example](google-sso.png)
 
-# Left as an exercise for the reader
+## Left as an exercise for the reader
 The instructions above will get you up and running, but if you want a stable, secure, and correctly configured system, you’ll at least want to consider some of the following:
 1. Review the full documentation for LibreChat and configured desired options
 2. Create a [systemd unit file](https://askubuntu.com/questions/1459175/how-to-run-a-docker-compose-as-a-systemd-service) to automatically start LibreChat’s docker containers as the librechat user
 3. Set up your distribution’s preferred firewall to disallow inbound connections to ports other than 80 and 443 (and SSH 22 from trusted addresses)
 4. Install and configure fail2ban to protect your SSH logins if you publicly expose port 22
 5. Configure some form of backups
-
-
