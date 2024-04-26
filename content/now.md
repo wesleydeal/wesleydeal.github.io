@@ -5,7 +5,7 @@ title = "Now"
 draft = false
 +++
 
-How did you get here? I don't even link to this page yet?
+How did you get here? I don't even link to this page yet.
 
 {% blockquote(author="Derek Silvers",url="https://nownownow.com/about") %}
 a website with a link that says "now" goes to a page that tells you what this person is focused on at this point in their life. For short, we call it a "now page".
