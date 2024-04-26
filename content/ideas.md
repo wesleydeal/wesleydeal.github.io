@@ -5,3 +5,4 @@ title = "Ideas"
 draft = true
 +++
 
+head empty

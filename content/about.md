@@ -5,8 +5,6 @@ title = "About"
 draft = true
 +++
 
-How did you get here?
-
 ## Me
 
 I like technology.
@@ -14,3 +12,7 @@ I like technology.
 ## This site
 
 is published through [GitHub](https://github.com/wesleydeal/deal.digital) using the [Zola](https://getzola.org) static site generator.
+
+## See also
+
+what I'm [doing now](/now).

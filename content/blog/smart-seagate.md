@@ -2,10 +2,10 @@
 author = "Wesley Deal"
 title = "Reading & Interpreting SMART Read/Seek Error Data on Seagate Drives"
 date = 2017-09-17
-updated = 2023-12-01
+updated = 2024-04-26
 +++
 
-Seagate hard drives often report extremely high read and seek error rates in SMART data. After pronouncing many such drives defective, I did some research on the subject and found that Seagate drives use non-standard formatting for read and seak error rates, and every piece of software I've used reports these values incorrectly. While the easiest advice on this subject is to ignore these values in the absence of other drive issues, there is a way to read them.
+Seagate hard drives often report extremely high read and seek error rates in SMART data. After pronouncing many such drives defective, I did some digging and found that Seagate drives use non-standard formatting for these values. Every piece of disk-monitoring software I had used reports these values incorrectly. Incidentally, this was good for our bottom line at the computer shop where we sold many customers SSD upgrades on the basis of these mistaken readings. While the easiest advice on this subject is to ignore these values in the absence of other drive issues, there is a way to read them.
 
 ## The Process
 
@@ -19,7 +19,7 @@ Using this command, our read and seek error values become **0x<u>0000</u>07cda64
 
 ## Additional Reading
 
-- my primary source: [an article by *fzabkar*](http://www.users.on.net/~fzabkar/HDD/Seagate_SER_RRER_HEC.html)
+- my primary source: [an article by *fzabkar*](http://web.archive.org/web/20211208195204/http://www.users.on.net/~fzabkar/HDD/Seagate_SER_RRER_HEC.html)
 
 - a [good blog post on the subject by Stjepan Groš](http://sgros.blogspot.com/2013/01/seagate-disk-smart-values.html)
 
