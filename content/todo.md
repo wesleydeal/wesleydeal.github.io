@@ -2,7 +2,12 @@
 title = "To-Do List"
 +++
 
-* Complete [About](/about)
+* Website
+	* Complete [About](/about)
+* Resume
+	* Zoom buttons
+	* Share button
+	* Link to main site
 
 # Done
 
