@@ -152,8 +152,8 @@ header nav a{
 	margin-top: .2em;
 }
 
-header nav a:first-child{
-	color: var(--color-logo-fg) !important;
+header nav a:link:first-child, header nav a:visited:first-child{
+	color: var(--color-logo-fg);
 	font-weight: 500;
 	background: var(--color-logo-bg);
 	box-shadow: 0 0 0 2px var(--color-logo-fg);
