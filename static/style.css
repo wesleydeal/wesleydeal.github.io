@@ -154,7 +154,7 @@ header nav a{
 
 header nav a:link:first-child, header nav a:visited:first-child{
 	color: var(--color-logo-fg);
-	transition: background-position 300ms ease-in-out;
+	transition: background-position 250ms ease-out;
 	font-weight: 500;
 	background: var(--color-logo-bg);
 	background: linear-gradient(to bottom right, var(--color-logo-bg) 0%, var(--color-logo-bg) 34%, var(--color-hover) 66%);
