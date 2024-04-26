@@ -94,17 +94,22 @@ header{
 	padding: 10px 10px 0;
 }
 
-nav{
+header nav{
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
-nav a{
-	margin: 0 15px;
+header nav span{
+	margin: 0 1em;
+	font-size: 1.2em;
 }
 
-nav a:first-child{
-	margin-left: 0;
+header nav a{
+	margin-top: .2em;
+}
+
+header nav a:first-child{
 	color: var(--color-logo-fg) !important;
 	font-weight: 500;
 	background: var(--color-logo-bg);
@@ -112,10 +117,6 @@ nav a:first-child{
 	padding: 3px 15px;
 	font-size: 1.2em;
 	font-family: 'Red Hat Mono', monospace;
-}
-
-nav a:last-child{
-	margin-right: 0 !important;
 }
 
 @media (max-width: 370px) {
@@ -229,6 +230,15 @@ small{
 	text-align: right;
 }
 
+.quote-signoff{
+	text-align: right;
+	margin: 10px 20px;
+}
+
+.quote-signoff a{
+	display: inline-block;
+}
+
 time {
 	font-variant-numeric: tabular-nums;
 }
@@ -238,7 +248,11 @@ time {
 	margin-bottom: 0.5em;
 }
 
-.article-signoff p{
+.quote-signoff .author{
+	margin-bottom: 0;
+}
+
+.article-signoff p, .quote-signoff p{
 	margin: 0;
 }
 
