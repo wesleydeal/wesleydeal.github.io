@@ -1,22 +1,35 @@
 +++
 author = "Wesley Deal"
-title = "TPMiddle: Scroll & middle-click with the TrackPoint"
+title = "Scroll & middle-click with the TrackPoint"
 date = 2017-08-06
 updated = 2024-04-25
 +++
 
-On ThinkPads running Windows, the middle mouse button below the TrackPoint can be used as a scroll modifier for the trackpoint or a middle-click/MOUSE3 button, but not both at the same time. TPMiddle.exe is a brilliant program by Gerhard Wiesinger that allows both functions at once by detecting whether or not the mouse is moved between press and release.
+<style>
+:root{
+	--color-accent: #E10020;
+	--blockquote-bg: linear-gradient(135deg, #E1002020, #E1002000);
+	--color-hover: #E10020;
+	--color-logo-bg: #E10020;
+	--color-logo-fg: #fff;
+}
+</style>
 
-This tool has some issues on newer devices. Suggested replacements include [W10Wheel.NET by ykon](https://github.com/ykon/w10wheel.net).
+On ThinkPads running Windows, the middle mouse button below the TrackPoint can be used as a scroll modifier for the trackpoint or a middle-click/MOUSE3 button, but not both at the same time. This page covers ways to resolve this.
 
-## Downloads
+## TPMiddle
+TPMiddle.exe is a brilliant program by Gerhard Wiesinger that allows both functions at once by detecting whether or not the mouse is moved between press and release.
+
+This tool has some issues on newer devices. Suggested replacements include [W10Wheel.NET](https://github.com/ykon/w10wheel.net).
+
+### Downloads
 
 * [tpmiddle-0.6.exe](tpmiddle-0.6.exe) - **Recommended**, especially for Windows 10 users, 10.5kb
 
 * [tpmiddle-0.7.exe](tpmiddle-0.7.exe) - Incompatible with some newer systems, 11kb  
 also available from the [author's site](https://www.wiesinger.com/opensource/TPMiddle/V0.7/Release/tpmiddle.exe)
 
-## Installation
+### Installation
 
 1. Make sure you have [Microsoft Visual C++ 2010 Redistributables](https://www.microsoft.com/en-us/download/details.aspx?id=26999) installed
 2. Ensure your middle button is set to "Use for scrolling" under Control Panel > Mouse > ThinkPad
@@ -28,14 +41,16 @@ also available from the [author's site](https://www.wiesinger.com/opensource/TPM
 
 An [AutoHotKey-based substitute](http://web.archive.org/web/20220125153630/http://forum.notebookreview.com/threads/ultranav-middle-click-button-scroll.423415/) was listed in the Notebook Review forums a few years ago.
 
-[W10Wheel.NET](https://github.com/ykon/w10wheel.net/releases/latest) ([wiki](https://github.com/ykon/w10wheel.net/wiki)) which requires [.NET Framework 4.x](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net48-web-installer) seems to be the best option.
+
+### W10Wheel.NET
+[W10Wheel.NET](https://github.com/ykon/w10wheel.net/releases/latest) by ykon ([wiki](https://github.com/ykon/w10wheel.net/wiki)) seems to be the best option. You'll need [.NET Framework 4.x](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net48-web-installer).
 
 As per [/u/JakandClank on reddit](https://old.reddit.com/r/thinkpad/comments/q2cfup/tpmiddle_on_newer_thinkpads/):
 
 >I've got a pretty decent workaround with w10wheel that works just about as well as tpmiddle did. Here's how I do it:
 >
 > 1. Download w10wheel and unzip it somewhere.
-> 2. Follow the instructions on this page to create a UAC-less shortcut for the program. This will allow the program to run as administrator without having to allow it every time with the User Account Control prompt. You want to run it as admin so you can scroll on things like Task Manager and your clipboard history.
+> 2. Follow the instructions on [this page](https://www.tenforums.com/tutorials/57690-create-elevated-shortcut-without-uac-prompt-windows-10-a.html) to create a UAC-less shortcut for the program. This will allow the program to run as administrator without having to allow it every time with the User Account Control prompt. You want to run it as admin so you can scroll on things like Task Manager and your clipboard history.
 > 3. Copy the shortcut into this directory: `C:\Users\(username)\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
 >
 > Now the w10wheel program will be installed (by just unzipping it, there's no installer) and will launch at startup without an annoying UAC prompt.

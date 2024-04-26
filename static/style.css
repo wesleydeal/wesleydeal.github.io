@@ -10,7 +10,7 @@
 	--color-logo-fg: #000;
 	--color-logo-bg: #7fa;
 	--color-accent: #7fa;
-	--blockquote-bg: linear-gradient(135deg, #7fa1, #7fa0);
+	--blockquote-bg: linear-gradient(135deg, #7fa3, #7fa2, #7fa0);
 }
 
 @media screen and (prefers-color-scheme:dark){
@@ -19,6 +19,7 @@
 		--color-bg: #111;
 		--color-link: #4df;
 		--color-hover: #f7a;
+		--blockquote-bg: linear-gradient(135deg, #7fa1, #7fa0);
 	}
 	
 	html{
@@ -159,11 +160,11 @@ h2{
 }
 
 h3{
-	font-size: 1.2em;
-}
-
-h3,h4,h5,h6{
-	margin: 6px 0;
+	font-size: 1em;
+	margin: 1.2em 0 0;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-weight: 500;
 }
 
 p,ol,ul{
