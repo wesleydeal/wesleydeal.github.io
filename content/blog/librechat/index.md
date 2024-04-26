@@ -35,9 +35,11 @@ useradd -r -U librechat
 groupadd docker
 usermod -aG docker librechat
 install -d -m 0755 -o librechat -g librechat /opt/librechat
+```
 
-Deploy LibreChat and Caddy
+## Deploy LibreChat and Caddy
 Log in as the service account and set up LibreChat
+```sh
 sudo -i -u librechat
 cd /opt/librechat
 git clone https://github.com/danny-avila/LibreChat .

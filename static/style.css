@@ -24,19 +24,6 @@
 	html{
 		color-scheme: dark;
 	}
-	
-	body{
-		color: #fff9f9;
-		background: #111;
-	}
-
-	a:link, a:visited{
-		color: #4df;
-	}
-
-	a:focus, a:hover{
-		color: #f7a;
-	}
 }
 
 @media only screen {
