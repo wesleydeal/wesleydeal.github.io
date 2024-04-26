@@ -11,6 +11,8 @@ output_dir = "public"
 
 author = "Wesley Deal"
 
+generate_feed = true
+
 
 [markdown]
 # Whether to do syntax highlighting
