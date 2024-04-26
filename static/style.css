@@ -111,23 +111,18 @@ a:link,a:visited{
 	transition: 0.3s color ease;
 	text-decoration: none;
 	color: var(--color-link);
+	background-image: linear-gradient(var(--color-hover), var(--color-hover));
+	background-size: 0 0.0625em;
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	transition: background-size 0.2s ease-in-out;
 }
 a:focus,a:hover{
 	color: var(--color-hover);
-	outline: none;
+	background-size: 100% 0.0625em;
 }
-a:after{
-	content: "";
-	transition: 0.4s all ease;
-	position: absolute;
-	bottom: -.16em;
-	left: 0;
-	height: .15em;
-	width: 0%;
-	background: var(--color-hover);
-}
-a:focus:after,a:hover:after{
-	width:100%;
+a:focus-visible {
+	outline: 2px solid var(--color-hover);
 }
 
 img{
