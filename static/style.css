@@ -2,6 +2,43 @@
 @import url("/syntax-light.css") print, (prefers-color-scheme: light);
 @import url(https://fonts.bunny.net/css?family=red-hat-text:300,300i,400,400i,500,500i,600,600i,700,700i|red-hat-mono:400,400i,500,700,700i|red-hat-display:700);
 
+:root {
+	--color-fg: #1d1d1d;
+	--color-bg: #fafafa;
+	--color-link: #0068fa;
+	--color-hover: #f7a;
+	--color-logo-fg: #000;
+	--color-logo-bg: #7fa;
+	--color-accent: #7fa;
+	--blockquote-bg: linear-gradient(135deg, #7fa1, #7fa0);
+}
+
+@media screen and (prefers-color-scheme:dark){
+	:root {
+		--color-fg: #fff9f9;
+		--color-bg: #111;
+		--color-link: #4df;
+		--color-hover: #f7a;
+	}
+	
+	html{
+		color-scheme: dark;
+	}
+	
+	body{
+		color: #fff9f9;
+		background: #111;
+	}
+
+	a:link, a:visited{
+		color: #4df;
+	}
+
+	a:focus, a:hover{
+		color: #f7a;
+	}
+}
+
 @media only screen {
 	html {
 		margin-left: calc(100vw - 100%);
@@ -20,8 +57,8 @@ body{
 	margin: 0;
 	padding: 0;
 	font: 1em/1.5 "Red Hat Text",Roboto,"Trebuchet MS","Helvetica Neue",Helvetica,Ubuntu,sans-serif;
-	color: #1d1d1d;
-	background: #fafafa;
+	color: var(--color-fg);
+	background: var(--color-bg);
 	word-wrap: break-word;
 	display: flex;
 	flex-direction: column;
@@ -30,29 +67,29 @@ body{
 }
 
 ::selection{
-	background: #f7a;
-	color: #fff
+	background: var(--color-hover);
+	color: var(--color-bg);
 }
 
 a:link,a:visited{
 	position:relative;
 	transition: 0.3s color ease;
 	text-decoration: none;
-	color: #0068fa;
+	color: var(--color-link);
 }
 a:focus,a:hover{
-	color: #f7a;
+	color: var(--color-hover);
 	outline: none;
 }
 a:after{
 	content: "";
-	transition:0.4s all ease;
-	position:absolute;
-	bottom:-.16em;
-	left:0;
-	height:.15em;
-	width:0%;
-	background:#f7a;
+	transition: 0.4s all ease;
+	position: absolute;
+	bottom: -.16em;
+	left: 0;
+	height: .15em;
+	width: 0%;
+	background: var(--color-hover);
 }
 a:focus:after,a:hover:after{
 	width:100%;
@@ -73,36 +110,18 @@ header{
 nav{
 	display: flex;
 	align-items: center;
-	/*
-	padding: 30px 0 10px calc((100vw - 790px)/2);
-	border-bottom: 2px solid #f7a;
-	color: #999;
-	background: #1d1d1d;
-	*/
 }
 
 nav a{
 	margin: 0 15px;
 }
 
-/*
-nav>a,nav>a:link,nav>a:visited{
-	color: #fff !important;
-	margin: 0 5px;
-	display: inline-block;
-}
-
-nav>a:hover,nav>a:focus{
-	color: #f7a;
-}
-*/
-
 nav a:first-child{
 	margin-left: 0;
-	color: #000 !important;
+	color: var(--color-logo-fg) !important;
 	font-weight: 500;
-	background: #7fa;
-	box-shadow: 0 0 0 2px #000;
+	background: var(--color-logo-bg);
+	box-shadow: 0 0 0 2px var(--color-logo-fg);
 	padding: 3px 15px;
 	font-size: 1.2em;
 	font-family: 'Red Hat Mono', monospace;
@@ -172,11 +191,13 @@ li{
 	padding: 0 0 0 6px;
 }
 
+ol li:marker{
+	background: 
+}
+
 code{
 	font-family: "Red Hat Mono",Consolas,monospace;
 	font-size: 15px;
-	/*display: inline;
-	white-space: pre-wrap;*/
 	padding: 0 .125em;
 }
 
@@ -196,8 +217,8 @@ code.block{
 blockquote{
 	padding: 10px 20px;
 	margin: 0;
-	border-left: 2px solid #7fa;
-	background: linear-gradient(135deg, #7fa1, #7fa0);
+	border-left: 2px solid var(--color-accent);
+	background: var(--blockquote-bg);
 }
 
 small{
@@ -209,7 +230,7 @@ small{
 	padding: 5px 15px;
 	margin-bottom: 16px;
 	display: inline-block;
-	border-left:  3px solid #f7a;
+	border-left: 3px solid var(--color-accent);
 }
 
 .meta{
@@ -263,32 +284,7 @@ ul.blog-listing li time{
 	}
 }
 
-@media screen and (prefers-color-scheme:dark){
-	html{
-		color-scheme: dark;
-	}
-	
-	body{
-		color: #fff9f9;
-		background: #111;
-	}
 
-	a:link, a:visited{
-		color: #4df;
-	}
-
-	a:focus, a:hover{
-		color: #f7a;
-	}
-
-	svg{
-		fill: #fff;
-	}
-
-	nav{
-		border-bottom-color: #c33000;
-	}
-}
 
 @media print{
 	nav a:first-child{
