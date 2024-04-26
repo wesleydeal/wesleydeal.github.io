@@ -7,8 +7,11 @@ title = "To-Do List"
 * Resume
 	* Zoom buttons
 	* Share button
-	* Link to main site
+
 
 # Done
+
+* Resume
+	* Link to main site
 
 (this space intentionally left blank)
