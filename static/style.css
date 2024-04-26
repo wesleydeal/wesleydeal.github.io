@@ -38,7 +38,7 @@ a:link,a:visited{
 	position:relative;
 	transition: 0.3s color ease;
 	text-decoration: none;
-	color: #0094ff;
+	color: #0068fa;
 }
 a:focus,a:hover{
 	color: #f7a;
@@ -48,7 +48,7 @@ a:after{
 	content: "";
 	transition:0.4s all ease;
 	position:absolute;
-	bottom:-.2em;
+	bottom:-.16em;
 	left:0;
 	height:.15em;
 	width:0%;
@@ -102,6 +102,7 @@ nav a:first-child{
 	color: #000 !important;
 	font-weight: 500;
 	background: #7fa;
+	box-shadow: 0 0 0 2px #000;
 	padding: 3px 15px;
 	font-size: 1.2em;
 	font-family: 'Red Hat Mono', monospace;
