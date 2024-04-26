@@ -7,9 +7,7 @@ author = "Wesley Deal"
 
 Let's say, for the sake of argument, that you're overworked and understaffed. A while ago, something popped up on the top of your Shoretel management page. You noticed it when you were hastily onboarding a new employee:
 
-{% redquote() %}
-Due to license violation, access to Director will be locked in 38 days. Take proper action before the grace period has expired. Note that there are additional charges if you need to recover from a locked Director.
-{% end %}
+>Due to license violation, access to Director will be locked in 38 days. Take proper action before the grace period has expired. Note that there are additional charges if you need to recover from a locked Director.
 
 You made a mental note and moved onto the next thing.
 
