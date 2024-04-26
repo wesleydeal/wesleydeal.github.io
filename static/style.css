@@ -178,10 +178,11 @@ ol,ul{
 li{
 	margin: 0 0 4px;
 	padding: 0 0 0 6px;
+	position: relative;
 }
 
-ol li:marker{
-	background: 
+ol ol{
+	list-style-type: lower-alpha;
 }
 
 code{
