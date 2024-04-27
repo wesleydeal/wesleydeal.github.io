@@ -1,15 +1,19 @@
 +++
 date = 2024-04-26
-updated = 2024-04-26
-title = "Now"
+updated = 2024-04-27
+title = "What I'm doing now"
 draft = false
 +++
-
-How did you get here? I don't even link to this page yet.
 
 {% blockquote(author="Derek Silvers",url="https://nownownow.com/about") %}
 a website with a link that says "now" goes to a page that tells you what this person is focused on at this point in their life. For short, we call it a "now page".
 {% end %}
+
+**Fitness** is a major focus of mine for a few years now. My goal at this point is to reach 15% bodyfat and build a noticeable amount of muscle. In addition to running and lifting weights, I have recently gotten into hiking and I'm trying out 100 push-ups per day.
+
+**Hiking** has really grown on me in the last 6 months. I frequent [Pine Mountain](https://www.cityofcartersville.org/pinemountain/page/pine-mountain-trail-map) in Cartersville, GA because it's a decent length, steep trail with beautiful views and a scenic summit. There are connecting trails going to and beyond Cooper's Furnace, prefect on days that I have time and energy to spare.
+
+**Building this website** is aimed at holding me accountable to define and follow through on my goals. In addition to developing new technical skills, I'd like to get better at expressing myself and hone my writing.
 
 ## Improving my skillset
 It's come to my attention that the majority of organizations do not now operate off of mostly
