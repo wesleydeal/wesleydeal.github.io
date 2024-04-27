@@ -16,15 +16,16 @@ a website with a link that says "now" goes to a page that tells you what this pe
 **Building this website** is aimed at holding me accountable to define and follow through on my goals. In addition to developing new technical skills, I'd like to get better at expressing myself and hone my writing.
 
 ## Improving my skillset
-It's come to my attention that the majority of organizations do not now operate off of mostly
-Windows servers, managed as pets, hosted on the premises. The IT industry at large has adopted
-concepts such as 'Infrastructure as Code' and 'cloud-first architecture' under the view that this
-makes things cheaper, easier, and safer to manage. I have yet to see clear evidence that this
-holds true for anyone but the largest organizations.
+I recently got a CompTIA Security+ certification. I found the material easy to grasp, and have been
+evaluating my next step. Here's what I'm thinking:
 
-But time and tide wait for no man, and it is clear that most higher-level IT administration roles
-will involve expertise in cloud architecture. I recently got a CompTIA Security+ certification and
-I'm exploring my options in terms of projects and certifications relating to "cloud" and "DevOps"
+I have never been a big proponent or user of "the cloud" as a whole and its spawned concepts:
+Infrastructure as Code, microservice architecture, DevOps. I've operated under the assumption that
+old fashioned on-premises monolithic infrastructure is usually cheaper and comes with less
+surprises, and so far the conservative approach has worked out well. But time and tide wait for no
+man, and it is clear that most IT administration roles require expertise in cloud architecture.
+
+I'm exploring my options in terms of relevant projects and certifications
 but here's what the shortlist looks like now:
 
  * The [Cloud Resume Challenge (Azure)](https://cloudresumechallenge.dev/docs/the-challenge/azure/)
