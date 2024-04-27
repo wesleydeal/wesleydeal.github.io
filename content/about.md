@@ -7,11 +7,19 @@ draft = true
 
 ## Me
 
-I like technology.
 
 ## This site
 
-is published through [GitHub](https://github.com/wesleydeal/deal.digital) using the [Zola](https://getzola.org) static site generator.
+is published through [GitHub](https://github.com/wesleydeal/deal.digital) using the
+[Zola](https://getzola.org) static site generator. It uses the Red Hat Text, Display,
+and Mono typefaces.
+
+### Design goals
+
+* keep page resources <512kB
+* use semantic and readable HTML where possible
+* maximize readability
+* minimize scripts & external resources
 
 ## See also
 
