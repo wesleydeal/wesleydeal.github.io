@@ -1,8 +1,12 @@
 +++
-title = "Fix a locked Shoretel/Shoreware/Mitel Director"
+title = "Fix a locked Shoretel/Mitel Director"
 date = 2020-09-15
 updated = 2023-12-01
 author = "Wesley Deal"
+[taxonomies]
+tags = ["software", "IT"]
+[extra]
+shorttitle = "Unlock a [Shore/Mi]Tel Director"
 +++
 
 Let's say, for the sake of argument, that you're overworked and understaffed. A while ago, something popped up on the top of your Shoretel management page. You noticed it when you were hastily onboarding a new employee:

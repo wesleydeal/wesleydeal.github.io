@@ -3,6 +3,8 @@ author = "Wesley Deal"
 title = "Reading & Interpreting SMART Read/Seek Error Data on Seagate Drives"
 date = 2017-09-17
 updated = 2024-04-27
+[taxonomies]
+tags = ["hardware", "software"]
 [extra]
 shorttitle = "Interpret Seagate read/seek error rates"
 +++

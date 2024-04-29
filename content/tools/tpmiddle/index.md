@@ -3,6 +3,10 @@ author = "Wesley Deal"
 title = "Scroll & middle-click with the TrackPoint"
 date = 2017-08-06
 updated = 2024-04-25
+[taxonomies]
+tags = ["software", "thinkpad"]
+[extra]
+shorttitle = "Scroll & middle-click with a TrackPoint"
 +++
 
 <style>

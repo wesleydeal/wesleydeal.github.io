@@ -13,6 +13,9 @@ author = "Wesley Deal"
 
 generate_feed = true
 
+taxonomies = [
+	{name = "tags", feed = true, render = false},
+]
 
 [markdown]
 # Whether to do syntax highlighting
