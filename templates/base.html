@@ -3,7 +3,7 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wesley Deal</title>
+<title>{% if page.extra.shorttitle %}{{ page.extra.shorttitle}} - {% elif page.title %}{{ page.title}} - {% endif %}Wesley Deal</title>
 <link rel="stylesheet" href="/style.css">
 <header>
 	<nav>
