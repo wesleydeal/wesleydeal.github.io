@@ -50,7 +50,8 @@
 }
 
 :root {
-	--color-fg: #1d1d1d;
+	/*--color-fg: #1d1d1d;*/
+	--color-fg: #000;
 	--color-bg: #fafafa;
 	--color-link: #0068fa;
 	--color-hover: #f7a;
@@ -58,6 +59,7 @@
 	--color-logo-bg: #7fa;
 	--color-accent: #7fa;
 	--blockquote-bg: linear-gradient(135deg, #7fa3, #7fa2, #7fa0);
+	--gradient-bg: linear-gradient(135deg, #fff0ee 0%, #eef 100%);
 }
 
 @media screen and (prefers-color-scheme:dark){
@@ -67,6 +69,7 @@
 		--color-link: #4df;
 		--color-hover: #f7a;
 		--blockquote-bg: linear-gradient(135deg, #7fa1, #7fa0);
+		--gradient-bg: linear-gradient(135deg, #101 0%, #001 100%);
 	}
 	
 	html{
@@ -94,6 +97,9 @@ body{
 	font: normal 1em/1.5 "Red Hat Text",Roboto,"Trebuchet MS","Helvetica Neue",Helvetica,Ubuntu,sans-serif;
 	color: var(--color-fg);
 	background: var(--color-bg);
+	background-image: linear-gradient(#0000 0%, #7771 50%, #0000 100%), var(--gradient-bg);
+	background-size: auto 4px, 100vw 100vh;
+	background-attachment: fixed;
 	word-wrap: break-word;
 	display: flex;
 	flex-direction: column;
