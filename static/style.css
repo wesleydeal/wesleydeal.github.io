@@ -50,7 +50,6 @@
 }
 
 :root {
-	/*--color-fg: #1d1d1d;*/
 	--color-fg: #000;
 	--color-bg: #fafafa;
 	--color-link: #0068fa;
@@ -59,9 +58,7 @@
 	--color-logo-bg: #7fa;
 	--color-accent: #7fa;
 	--blockquote-bg: linear-gradient(135deg, #7fa3, #7fa2, #7fa0);
-	--gradient-bg: radial-gradient(ellipse  at center, #fafafa 0% 35%, transparent), repeating-linear-gradient(#0000 0 4px, #ffa37729 4px 5px), linear-gradient(225deg, #fff0ee 0%, #eef 100%);
-	/*--gradient-bg: radial-gradient(ellipse  at center, #fafafa 0% 35%, transparent), repeating-linear-gradient(to bottom, transparent 0 10px, #fafafa 10px 14px), linear-gradient(225deg, #fff0ee 0%, #eef 100%);*/
-	/*repeating-radial-gradient(circle at 0 0, #0000 0, #0000 3px, #ff5b222e 4px, #ff5b222e 6px, #0000 7px), linear-gradient(135deg, #fff0ee 0%, #eef 100%)*/
+	--gradient-bg: radial-gradient(ellipse at center, #fafafa 0 calc(max(180px,35vw)), transparent), repeating-linear-gradient(#0000 0 4px, #ffa37729 4px 5px), linear-gradient(225deg, #fff0ee 0%, #eef 100%);
 }
 
 @media screen and (prefers-color-scheme:dark){
@@ -71,7 +68,6 @@
 		--color-link: #4df;
 		--color-hover: #f7a;
 		--blockquote-bg: linear-gradient(135deg, #7fa1, #7fa0);
-		--gradient-bg: repeating-linear-gradient(#0000 0 3px, #7771 3px 5px), linear-gradient(135deg, #101 0%, #001 100%);
 		--gradient-bg: repeating-linear-gradient(#0000 0 3px, #7771 3px 5px), radial-gradient(ellipse at 50% 20%, #1a0011, #001);
 	}
 	
@@ -115,15 +111,14 @@ body{
 }
 
 a:link,a:visited{
-	position:relative;
-	transition: 0.3s color ease;
+	position: relative;
 	text-decoration: none;
 	color: var(--color-link);
 	background-image: linear-gradient(var(--color-hover), var(--color-hover));
 	background-size: 0 0.0625em;
 	background-position: bottom left;
 	background-repeat: no-repeat;
-	transition: background-size 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, background-size 0.2s ease-in-out;
 }
 a:focus,a:hover{
 	color: var(--color-hover);
@@ -162,7 +157,7 @@ header nav a{
 
 header nav a:link:first-child, header nav a:visited:first-child{
 	color: var(--color-logo-fg);
-	transition: background-position 250ms ease-out;
+	transition: background-position 250ms ease-out, box-shadow 100ms ease-in-out;
 	font-weight: 500;
 	background: var(--color-logo-bg);
 	background: linear-gradient(to bottom right, var(--color-logo-bg) 0%, var(--color-logo-bg) 34%, var(--color-hover) 66%);
@@ -175,13 +170,14 @@ header nav a:link:first-child, header nav a:visited:first-child{
 
 header nav a:hover:first-child, header nav a:hover:first-child{
 	background-position: bottom right;
+	box-shadow: 0 0 5px 0 var(--color-hover);
 }
 
 @media (max-width: 370px) {
 	nav{font-size: .85em;}
 }
 
-@media (min-width: 650px) {
+@media screen and (min-width: 650px) {
 	header{
 		margin: 20px auto;
 	}
@@ -228,12 +224,12 @@ p,ol,ul{
 }
 
 ol,ul{
-	padding: 0 0 0 28px;
+	padding: 0 0 0 1.7em;
 }
 
 li{
-	margin: 0 0 4px;
-	padding: 0 0 0 6px;
+	margin: 0 0 .25em;
+	padding: 0 0 0 .4em;
 	position: relative;
 }
 
@@ -363,6 +359,10 @@ ul.blog-listing li time{
 
 
 @media print{
+	body{
+		background: #fff;
+		font-size: 11pt;
+	}
 	nav a:first-child{
 		-webkit-print-color-adjust:exact;
 		print-color-adjust:exact;
