@@ -77,6 +77,12 @@
 	}
 }
 
+@media screen and (max-width: 500px){
+	:root {
+		--gradient-bg: radial-gradient(ellipse 100vw 100vh at top center, #fff 0 150px, transparent), repeating-linear-gradient(#0000 0 4px, #ffa37729 4px 5px), linear-gradient(135deg, #ffecde 0%, #e6e6ff 100%);
+	}
+}
+
 @media only screen {
 	html {
 		margin-left: calc(100vw - 100%);
