@@ -204,6 +204,7 @@ h1{
 	font: 500 1.75em/1.2 "Red Hat Display", "Red Hat Text", sans-serif;
 	line-height: 1.1;
 	margin: 0 0 .5em;
+	position: relative;
 }
 
 .landing h1.title{
@@ -216,6 +217,7 @@ h2{
 	font: 600 1.2em/1.4 "Red Hat Display", "Red Hat Text", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
+	position: relative;
 }
 
 h3{
@@ -224,6 +226,7 @@ h3{
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 500;
+	position: relative;
 }
 
 p,ol,ul{
@@ -356,10 +359,24 @@ ul.blog-listing li time{
 	flex-shrink: 0;
 }
 
+a.zola-anchor:link, a.zola-anchor:visited{
+	position: absolute;
+	left: -1em;
+	opacity: 0;
+	transition: 250ms opacity ease-in-out;
+}
+
+:hover > a.zola-anchor:link, :hover > a.zola-anchor:visited{
+	opacity: 1;
+}
+
 @media screen and (max-width: 500px){
 	ul.blog-listing li{
 		flex-direction: column-reverse;
 		gap: 0;
+	}
+	a.zola-anchor:link, a.zola-anchor:visited{
+		display: none;
 	}
 }
 
