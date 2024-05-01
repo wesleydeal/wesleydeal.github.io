@@ -20,6 +20,11 @@ Because Brave [doesn't reliably sync my bookmarks](https://github.com/brave/brav
 * [Rachel Andrew](https://rachelandrew.co.uk/), Google technical writer
 * [Mark Boulton](https://markboulton.co.uk/), product designer
 
+## Retro Computing
+* [Nathan Linebacks Toasty Technology](https://toastytech.com/)
+* [Ncommander's Tech Corner](https://casadevall.pro/) (see also, his [YouTube channel](https://www.youtube.com/@NCommander/))
+
+
 ## Cool Websites
 
 (websites whose primary characteristic is that they are visually, audibly, or mechanically interesting)
