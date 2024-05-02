@@ -33,7 +33,7 @@
 					{% set sectionobject = get_section(path=s) %}
 					{% set_global articles = articles | concat(with=sectionobject.pages) %}
 				{% endfor %}
-				{% set articles = articles | sort(attribute="date") | reverse %}
+				{% set articles = articles | filter(attribute="date") | sort(attribute="date") | reverse %}
 				{% for article in articles %}
 				<li><a href="{{ article.permalink | safe }}">{% if article.extra.shorttitle %}{{article.extra.shorttitle}}{% else %}{{ article.title }}{% endif %}</a><time date="{{ article.date }}">{{ article.date }}</time></li>
 				{% endfor %}

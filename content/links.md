@@ -83,5 +83,8 @@ Because Brave [doesn't reliably sync my bookmarks](https://github.com/brave/brav
 ### Syntax highlighting
 *
 
+## Unsorted Items
+* [Sad Servers](https://sadservers.com/)
+
 ## Meta Lists
 * [awesome-* on GitHub](https://github.com/sindresorhus/awesome#readme)
