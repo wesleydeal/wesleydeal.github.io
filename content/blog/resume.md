@@ -72,64 +72,7 @@ we want our name and job title in a seperate area from our contact information, 
 	<div id="contact">
 		<p><a href="tel:555-555-5555">(555) 555-5555</a>
 		<p><a href="mailto:john.doe@example.com">john.doe@example.com</a>
-		<p>Anytown, Strongbadia
-	</div>
-</header>
-<section id="experience">
-	<h1>Work Experience</h1>
-	<details open>
-		<summary>
-			<h2><b>Widget Developer</b> at NuWidget</h2>
-			<span class="dates">May 2017 &ndash; Present</span>
-		</summary>
-		<ul>
-			<li>Spearheaded the development of a cutting-edge widget customization tool, resulting in a 30% increase in user engagement within the first quarter of release.</li>
-			<li>Collaborated with cross-functional teams to streamline widget integration processes, reducing deployment time by 40%.</li>
-			<li>Implemented innovative widget performance optimization techniques, enhancing load times by 50% and ensuring seamless user experiences across all platforms.</li>
-			<li>Led a team of developers in creating a library of reusable widget components, improving development efficiency by 25% and fostering consistency in design and functionality.</li>
-			<li>Conducted comprehensive research on emerging widget technologies and industry trends, driving continuous improvement and maintaining NuWidget's competitive edge in the market.</li>
-		</ul>
-	</details>
-	<details open>
-		<summary>
-			<h2><b>Junior Widget Developer</b> at Acme Widgets Inc.</h2>
-			<span class="dates">December 2015 &ndash; July 2017</span>
-		</summary>
-		<ul>
-			<li>Orchestrated the migration of legacy widget systems to a modern architecture, resulting in a 60% reduction in maintenance costs and improved scalability.</li>
-			<li>Championed accessibility initiatives by integrating ADA-compliant features into widget designs, expanding user base and ensuring inclusivity for all customers.</li>
-		</ul>
-	</details>
-</section>
-<section id="education-certs">
-	<h1>Education & Certifications</h1>
-	<h3 style="margin-bottom: 0;"><span><b>Bachelor of Science in Information Technology</b> at Kennesaw State University</span> <span class="dates">May 2023</span></h3>
-	<p class="withabove">Concentration: <b>Cyber Operations Security</b>, Minor: <b>Computer Science</b>, Graduated <i>magna cum laude</i>
-	<h3><span><b>CompTIA Security+</b> Certification</span> <span class="dates">April 2024</span></h3>
-	<h3><span><b>Cisco Certified Network Associate (CCNA)</b> Routing &amp; Switching</span> <span class="dates">May 2022</span></h3>
-</section>
-<section id="skills">
-	<h1>Skills</h1>
-	<p><strong>Software</strong>: Microsoft 365, Azure/Entra, Active Directory, Hyper-V, SCCM/MDT, DNS, DHCP, Google Workspace, VoIP, PaperCut, VEEAM, Duo MFA, Docker, Proxmox/KVM, Debian, Ubuntu, CentOS/RHEL, Oracle Linux, MariaDB/MySQL, MS SQL.
-	<p><strong>Networks</strong>: access points, point-to-point wireless links, switches, routers, firewalls from Cisco, Fortinet, HPE/Aruba, Brocade, Ruckus, Ubiquiti, Avaya, SonicWall, Zyxel; LibreNMS, Graylog, inter-VLAN routing with ACLs, tuning high density Wi-Fi installations, preparing & securing site-to-site and remote access VPNs
-	<p><strong>Scripting</strong>: Experienced with Python and PowerShell. Some work with C, C#, C++, Java, JS, Bash.
-</section>
-<footer>
-	<p>Written and typeset in HTML/CSS. Updated <time datetime="2024-04-23">2024-04-26</time>. Latest revision available at <a href="https://deal.digital/resume">deal.digital/resume</a>
-</footer>
-```
-
-<details>
-<summary>See it in action</summary>
-<header>
-	<div id="namebox">
-		<p class="name">John Doe
-		<p class="jobtitle">Widget Developer
-	</div>
-	<div id="contact">
-		<p><a href="tel:555-555-5555">(555) 555-5555</a>
-		<p><a href="mailto:john.doe@example.com">john.doe@example.com</a>
-		<p>Anytown, Strongbadia
+		<p>Anchorage, Alaska
 	</div>
 </header>
 <section id="experience">
@@ -171,6 +114,10 @@ we want our name and job title in a seperate area from our contact information, 
 <footer>
 	<p>Written and typeset in HTML/CSS. Updated <time datetime="2024-04-28">2024-04-28</time>. References available upon request.
 </footer>
-</summary>
+```
 
-Alright, so we have a structure
+Alright, so we have a structure for our resume. Now let's fill in our `<style>`sheet.
+
+```css
+
+```
