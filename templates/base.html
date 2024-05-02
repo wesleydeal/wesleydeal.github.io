@@ -8,7 +8,9 @@
 <body{% if page.slug %} id="{{ page.slug }}"{% endif %}>
 <header>
 	<nav>
+		{% block homelink %}
 		<a href="/">Wesley Deal</a>
+		{% endblock homelink %}
 		{% block breadcrumb %}
 		{% set current = section | default(value=page) %}
 		{% for ancestor in current.ancestors %}

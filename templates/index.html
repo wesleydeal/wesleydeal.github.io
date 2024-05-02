@@ -1,35 +1,54 @@
 {% extends "base.html" %}
 
+{% block homelink %}
+<a href="/" tabindex="-1">Wesley Deal</a>
+{% endblock homelink %}
 {% block breadcrumb %}
 {% endblock breadcrumb %}
 
 {% block content %}
 <article class="landing">
-	<h1 class="title">
-		Hello, I'm Wesley.
-	</h1>
-	<p>This page is 🚧 <b>under construction</b> 🚧 as a playground for Zola, HTML/CSS, design principles, and CI/CD with GitHub Actions.</p>
+	<h1 class="title">Hello!</h1>
+	<p>I'm Wesley, a technology enthusiast and sysadmin.
+	<p>Pardon any rough edges, this page is 🚧 <b>under construction</b> 🚧 as a playground for Zola, HTML/CSS, design principles, and CI/CD with GitHub Actions.</p>
 	<div class="landing-link-container">
-		<div class="landing-link-column">
-			<h2>See my...</h2>
+		<section class="sitebuttons">
+			<h2>Quick Links</h2>
 			<ul>
-				<li><a href="resume">Resume</a></li>
-				<li><a href="https://github.com/wesleydeal">GitHub</a></li>
-				<li><a href="https://linkedin.com/in/wesley-deal">LinkedIn</a></li>
-				<li><a href="now">/now</a></li>
-				<li><a href="links">/links</a></li>
-				<li><a href="uses">/uses</a></li>
+				<li><a href="resume">📄 Resume</a></li>
+				<li><a href="https://github.com/wesleydeal">👨🏻‍💻 GitHub</a></li>
+				<li><a href="https://linkedin.com/in/wesley-deal">🏢 LinkedIn</a></li>
+				<li><a href="now">⏳ I am now...</a></li>
+				<li><a href="links">🔗 Links</a></li>
+				<li><a href="uses">⌨️ I use...</a></li>
+				<li></li>
+				<li></li>
 			</ul>
-		</div>
-		<div class="landing-link-column">
+		</section>
+		<section>
 			<h2>Articles</h2>
-			<ul>
-				<li><a href="blog/librechat">Deploy LibreChat for cheap LLM queries</a></li>
-				<li><a href="blog/shorelock">Unlock a [Shore/Mi]Tel Director</a></li>
-				<li><a href="blog/smart-seagate">Interpret Seagate read/seek error rates</a></li>
-				<li><a href="tools/tpmiddle">Scroll &amp; middle-click with a TrackPoint</a></li>
+			<ul class="blog-listing">
+				{% set articles=[] %}
+				{% for s in section.subsections %}
+					{% set sectionobject = get_section(path=s) %}
+					{% set_global articles = articles | concat(with=sectionobject.pages) %}
+				{% endfor %}
+				{% set articles = articles | sort(attribute="date") | reverse %}
+				{% for article in articles %}
+				<li><a href="{{ article.permalink | safe }}">{% if article.extra.shorttitle %}{{article.extra.shorttitle}}{% else %}{{ article.title }}{% endif %}</a><time date="{{ article.date }}">{{ article.date }}</time></li>
+				{% endfor %}
 			</ul>
-		</div>
+		</section>
 	</div>
 </article>
+<script>
+	window.addEventListener('DOMContentLoaded', (event) => {
+		var hoursNow = (new Date()).getHours();
+		if (6 < hoursNow < 12) message = "Good morning!";
+		else if (hoursNow < 6) message = "Good afternoon!";
+		else if (hoursNow < 9) message = "Good evening!";
+		else                   message = "Good night!";
+		document.querySelector('h1.title').innerHTML = message;
+	}, false);
+</script>
 {% endblock content %}

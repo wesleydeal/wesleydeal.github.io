@@ -207,11 +207,6 @@ h1{
 	position: relative;
 }
 
-.landing h1.title{
-	font-size: 2em;
-	text-align: center;
-}
-
 h2{
 	margin: 25px 0 0;
 	font: 600 1.2em/1.4 "Red Hat Display", "Red Hat Text", sans-serif;
@@ -333,26 +328,41 @@ time {
 	margin: 0;
 }
 
-.landing p{
-	text-align: center;
-	max-width: 500px;
+
+.landing h1.title{
+	font-size: 3em;
 }
 
-.landing-link-container {
+
+.landing-link-container .sitebuttons ul {
 	display: flex;
-	gap: 10px 30px;
+	gap: 1em 1em;
 	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.landing-link-column ul {
-	padding: 0;
+	justify-content: center;
 	list-style-type: none;
+	padding: 0;
 }
 
-.landing-link-column ul li {
-	margin: .5em 0;
+.landing-link-container .sitebuttons ul li {
+	margin: 0;
 	padding: 0;
+	flex: 1 0 160px;
+}
+
+.sitebuttons a:link, .sitebuttons a:visited{
+	box-shadow: 0 0 0 2px var(--color-link);
+	background-size: 0 3px;
+	font-size: 1.25em;
+	padding: .5em .5em;
+	display: block;
+	font-weight: 500;
+	font-family: 'Red Hat Display', sans-serif;
+	transition: color 250ms ease-in-out, box-shadow 250ms ease-in-out, background-size 250ms ease-in-out;
+}
+
+.sitebuttons a:focus, .sitebuttons a:hover{
+	background-size: 100% 3px;
+	box-shadow: none;
 }
 
 ul.blog-listing{
