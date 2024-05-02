@@ -401,6 +401,9 @@ a.zola-anchor:link, a.zola-anchor:visited{
 	a.zola-anchor:link, a.zola-anchor:visited{
 		display: none;
 	}
+	body{
+		background-size: 100% 120vh;
+	}
 }
 
 
