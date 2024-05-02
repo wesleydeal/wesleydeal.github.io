@@ -273,6 +273,19 @@ blockquote{
 	background: var(--blockquote-bg);
 }
 
+table, tbody, thead, tr, th, td{
+	border-collapse: collapse;
+}
+
+th{
+	border: 
+}
+
+td,th{
+	border: 1px solid var(--color-fg);
+	padding: 5px 15px;
+}
+
 small{
 	font-size: .85em;
 	line-height: 1;

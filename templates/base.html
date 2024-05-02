@@ -3,8 +3,9 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if page.extra.shorttitle %}{{ page.extra.shorttitle}} - {% elif page.title %}{{ page.title}} - {% endif %}Wesley Deal</title>
+<title>{% if page.extra.shorttitle %}{{ page.extra.shorttitle }} - {% elif page.title %}{{ page.title }} - {% endif %}Wesley Deal</title>
 <link rel="stylesheet" href="/style.css">
+<body{% if page.slug %} id="{{ page.slug }}"{% endif %}>
 <header>
 	<nav>
 		<a href="/">Wesley Deal</a>
@@ -29,5 +30,5 @@
 <footer>
 	 No rights reserved. This webpage is provided as-is, without warranty or guarantee of any kind. You may copy, modify, and/or distribute its contents as desired, unless otherwise stated. Available on and published through <a href="https://github.com/wesleydeal/wesleydeal.github.io">GitHub</a> using the <a href="https://www.getzola.org/">Zola static site generator</a>.
 </footer>
-
+</body>
 </html>

@@ -15,6 +15,7 @@ a website with a link that says "now" goes to a page that tells you what this pe
 
 **Building this website** will hold me accountable to define and follow through on my goals. In addition to developing new technical skills, I'd like to get better at expressing myself and hone my writing skills.
 
+
 ## Learning cloud architectures
 I recently got a CompTIA Security+ certification. I found the material easy to grasp, and have been
 evaluating what I should learn next for my career. Here's what I'm thinking:

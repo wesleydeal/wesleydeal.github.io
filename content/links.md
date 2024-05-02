@@ -16,7 +16,7 @@ Because Brave [doesn't reliably sync my bookmarks](https://github.com/brave/brav
 * [PersonalSit.es](https://personalsit.es/)
 
 ### Web (technologies, design & development)
-* [Taylor.Town](https://taylor.town/)
+* [taylor.town](https://taylor.town/)
 * [Rachel Andrew](https://rachelandrew.co.uk/), Google technical writer
 * [Mark Boulton](https://markboulton.co.uk/), product designer
 
@@ -29,8 +29,14 @@ Because Brave [doesn't reliably sync my bookmarks](https://github.com/brave/brav
 
 (websites whose primary characteristic is that they are visually, audibly, or mechanically interesting)
 
+* [Windows 93](https://www.windows93.net/)
+* [CoolModFiles](https://coolmodfiles.com/) and [chiptune3.js demo](https://drsnuggles.github.io/chiptune/demo.html)
+
 ## Sharing 🏴‍☠️🦜
 * [📚 Anna's Archive](https://annas-archive.org) seems to have most every ebook and PDF
+* [🔗 awesome-piracy](https://shakil-shahadat.github.io/awesome-piracy/)
+* [🔗 reddit megathread](https://old.reddit.com/r/Piracy/wiki/megathread)
+* [🔗 /u/nbatman's wiki](https://old.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index)
 
 ## Software Development
 * [The Grug Brained Developer](https://grugbrain.dev/), a layman's guide to thinking like the self-aware smol brained
@@ -67,7 +73,7 @@ Because Brave [doesn't reliably sync my bookmarks](https://github.com/brave/brav
 * [Source Serif](https://fonts.google.com/specimen/Source+Serif+4) is in a very similar vein to Charter, but with more characters and weights. I love its distinctive '?' glyph
 
 ### Monospace Typefaces
-*
+* [Cascadia Code](https://github.com/microsoft/cascadia-code). Yeah, I know it's M$ and it's now a default font, but it's pretty and readable.
 
 ### Tools
 * [Variable font helper](https://variable-font-helper.web.app/) to select, compress, and host variable fonts from Google fonts
