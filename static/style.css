@@ -177,7 +177,7 @@ header nav a:link:first-child, header nav a:visited:first-child{
 
 header nav a:hover:first-child, header nav a:hover:first-child{
 	background-position: bottom right;
-	box-shadow: 0 0 5px 0 var(--color-hover);
+	box-shadow: 0 0 5px 1px var(--color-hover);
 }
 
 @media (max-width: 370px) {
@@ -246,11 +246,13 @@ code{
 	font-family: "Red Hat Mono",Consolas,monospace;
 	font-size: 15px;
 	padding: 0 .125em;
+	tab-size: 4;
 }
 
 pre{
 	padding: 10px;
 	overflow: auto;
+	tab-size: 4;
 }
 
 code.block{
