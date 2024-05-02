@@ -143,7 +143,7 @@ img{
 header{
 	max-width: 780px;
 	width: 100%;
-	margin: 0 auto;
+	margin: 0 auto .5em;
 	padding: 10px 10px 0;
 }
 
