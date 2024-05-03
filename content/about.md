@@ -7,7 +7,7 @@ draft = true
 
 ## Me
 
-I am technology enthusiast, systems administrator, and a person who is bad at self-description.
+I am technology enthusiast, systems administrator, and recovering glutton.
 
 ## This site
 

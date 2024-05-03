@@ -70,4 +70,3 @@ As per [/u/JakandClank on reddit](https://old.reddit.com/r/thinkpad/comments/q2c
 > 7. Make sure that **Horizontal Scroll** is checked in the same menu.
 > 8. In the **Set Number** menu, set **verticalThreshold** to 1 and **horizontalThreshold** to 4. These values are the "resistance" to your mouse movement. It maxes at 500 but really anything past 5 is hard on a trackpoint but YMMV. If you're gonna adjust it I'd recommend doing it a few ticks at a time.
 > 9. *Optional* Enable **Cursor Change** in the menu. This gives you a visual indicator that you are scrolling. I am yet to find a way to change which cursor type it changes to, unfortunately. I don't really like the "resize window" cursor it gives you.
-
