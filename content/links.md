@@ -20,11 +20,14 @@ Because Brave [doesn't reliably sync my bookmarks](https://github.com/brave/brav
 * [Rachel Andrew](https://rachelandrew.co.uk/), Google technical writer
 * [Mark Boulton](https://markboulton.co.uk/), product designer
 
-## Retro Computing
+### *nix
+* [dade](https://0xda.de/blog/)
+
+### Retro Computing
 * [Nathan Linebacks Toasty Technology](https://toastytech.com/)
 * [Ncommander's Tech Corner](https://casadevall.pro/) (see also, his [YouTube channel](https://www.youtube.com/@NCommander/))
 
-## Funny
+### Funny
 * [David Thorne's 27B/6](https://27bslash6.com/index.html)
 
 ## Cool Websites
@@ -93,6 +96,7 @@ Because Brave [doesn't reliably sync my bookmarks](https://github.com/brave/brav
 * [Sad Servers](https://sadservers.com/)
 * [Zola](https://www.getzola.org/documentation) & [Tera](https://keats.github.io/tera/docs/) docs
 * [BOFH API](https://bombeck.io/projects/bastard-operator-from-hell-generator) and the [excuse generator](https://it-excuse.bombeck.io/) using it
+* [Free for Developers](https://free-for.dev/) - a list of tools & platforms with a free tier
 
 ## Meta Lists
 * [awesome-* on GitHub](https://github.com/sindresorhus/awesome#readme)
