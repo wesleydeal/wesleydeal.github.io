@@ -24,6 +24,8 @@ Because Brave [doesn't reliably sync my bookmarks](https://github.com/brave/brav
 * [Nathan Linebacks Toasty Technology](https://toastytech.com/)
 * [Ncommander's Tech Corner](https://casadevall.pro/) (see also, his [YouTube channel](https://www.youtube.com/@NCommander/))
 
+## Funny
+* [David Thorne's 27B/6](https://27bslash6.com/index.html)
 
 ## Cool Websites
 
