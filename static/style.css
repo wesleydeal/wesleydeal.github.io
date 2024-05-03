@@ -173,6 +173,7 @@ header nav a:link:first-child, header nav a:visited:first-child{
 	padding: 3px 15px;
 	font-size: 1.2em;
 	font-family: 'Red Hat Mono', monospace;
+	border-radius: 3px;
 }
 
 header nav a:hover:first-child, header nav a:hover:first-child{
@@ -364,6 +365,7 @@ time {
 	font-weight: 500;
 	font-family: 'Red Hat Display', sans-serif;
 	transition: color 250ms ease-in-out, box-shadow 250ms ease-in-out, background-size 250ms ease-in-out;
+	border-radius: 5px;
 }
 
 .sitebuttons a:focus, .sitebuttons a:hover{
