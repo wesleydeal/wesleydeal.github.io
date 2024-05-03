@@ -24,6 +24,7 @@ This is a [/uses](https://uses.tech/) page
   * I haven't quite decided if [Helix](https://helix-editor.com/) is worth learning the muscle memory for, but I like it as well.
 * 📺 [yt-dlp](https://github.com/yt-dlp/yt-dlp) interfaces: [YTDLnis for Android](https://github.com/deniscerri/ytdlnis) and [stacher](https://stacher.io/)
 * 🌍 Brave Browser, although I'm considering a move to Firefox if the devs don't fix sync soon
+* 🦈 [Wireshark](https://www.wireshark.org/) remains the most valuable tool for network and application troubleshooting I have
 
 ## Services
 
@@ -32,6 +33,6 @@ This is a [/uses](https://uses.tech/) page
 
 ## Vehicles
 * 🚗 My trusty 2007 Lexus GS450h
-  * uses its awesome [hybrid synergy system](https://en.wikipedia.org/wiki/Hybrid_Synergy_Drive) to get me a whopping... 25mpg
+  * uses its awesome [hybrid synergy drive](https://en.wikipedia.org/wiki/Hybrid_Synergy_Drive) to get me a whopping... 25mpg
   * but it's practically old enough to vote and it has 340 horsepower that I use most of
 * 🏍️ 2010 Kawasaki KLX250S
