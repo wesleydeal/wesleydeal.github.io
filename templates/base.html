@@ -30,7 +30,9 @@
 	{% block content %} {% endblock %}
 </section>
 <footer>
-	 No rights reserved. This webpage is provided as-is, without warranty or guarantee of any kind. You may copy, modify, and/or distribute its contents as desired, unless otherwise stated. Available on and published through <a href="https://github.com/wesleydeal/wesleydeal.github.io">GitHub</a> using the <a href="https://www.getzola.org/">Zola static site generator</a>.
+	No rights reserved. <a href="https://github.com/wesleydeal/deal.digital{% if page.relative_path %}/edit/master/content/{{ page.relative_path }}{% endif %}">View source here</a>. Provided as-is, no warranty, etc.
+	Built {{ now(utc=true) | date(format="%Y-%m-%d %H:%M:%S UTC") }} with <a href="https://www.getzola.org/">Zola</a> on GitHub <a href="https://github.com/wesleydeal/deal.digital/actions">Actions</a>, hosted on GitHub Pages.
+	Thanks to Red Hat for <a href="https://www.redhat.com/en/about/brand/standards/typography">the typefaces</a>.
 </footer>
 </body>
 </html>
