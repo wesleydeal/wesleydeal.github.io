@@ -110,6 +110,7 @@ body{
 	flex-direction: column;
 	min-height: 100vh;
 	justify-content: space-between;
+	text-wrap: pretty;
 }
 
 ::selection{
@@ -340,6 +341,9 @@ time {
 	font-size: 3em;
 }
 
+.landing p{
+	text-wrap: balance;
+}
 
 .landing-link-container .sitebuttons ul {
 	display: flex;

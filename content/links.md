@@ -19,6 +19,7 @@ Because Brave [doesn't reliably sync my bookmarks](https://github.com/brave/brav
 * [taylor.town](https://taylor.town/)
 * [Rachel Andrew](https://rachelandrew.co.uk/), Google technical writer
 * [Mark Boulton](https://markboulton.co.uk/), product designer
+* [Aleksandr Hovhannisyan](https://www.aleksandrhovhannisyan.com/) (note his article on [font fallbacks without layout shift](https://www.aleksandrhovhannisyan.com/blog/perfect-font-fallbacks/))
 
 ### *nix
 * [dade](https://0xda.de/blog/)
@@ -36,6 +37,7 @@ Because Brave [doesn't reliably sync my bookmarks](https://github.com/brave/brav
 
 * [Windows 93](https://www.windows93.net/)
 * [CoolModFiles](https://coolmodfiles.com/) and [chiptune3.js demo](https://drsnuggles.github.io/chiptune/demo.html)
+* [Aiza Labs](https://lab.aizastudio.com/) compare your salary with athletes or play with teams notifications
 
 ## Sharing 🏴‍☠️🦜
 * [📚 Anna's Archive](https://annas-archive.org) seems to have most every ebook and PDF
