@@ -20,6 +20,7 @@ Because Brave [doesn't reliably sync my bookmarks](https://github.com/brave/brav
 * [Rachel Andrew](https://rachelandrew.co.uk/), Google technical writer
 * [Mark Boulton](https://markboulton.co.uk/), product designer
 * [Aleksandr Hovhannisyan](https://www.aleksandrhovhannisyan.com/) (note his article on [font fallbacks without layout shift](https://www.aleksandrhovhannisyan.com/blog/perfect-font-fallbacks/))
+* [rsapkf](https://rsapkf.org/)
 
 ### *nix
 * [dade](https://0xda.de/blog/)
