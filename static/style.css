@@ -121,6 +121,7 @@ body{
 a:link,a:visited{
 	position: relative;
 	text-decoration: none;
+	font-weight: 450;
 	color: var(--color-link);
 	background-image: linear-gradient(var(--color-hover), var(--color-hover));
 	background-size: 0 0.0625em;
