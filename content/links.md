@@ -5,7 +5,7 @@ updated = 2024-05-01
 shorttitle = "Links"
 +++
 
-Because Brave [doesn't reliably sync my bookmarks](https://github.com/brave/brave-browser/issues/35042) any more and search engines are less useful by the day, here's a bunch of links I find useful or interesting.
+Because Brave [doesn't reliably sync my bookmarks](https://github.com/brave/brave-browser/issues/35042) and search engines are less useful by the day
 
 ## Blogs & Personal Sites
 
