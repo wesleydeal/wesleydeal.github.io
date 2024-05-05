@@ -47,10 +47,10 @@
 <script>
 	window.addEventListener('DOMContentLoaded', (event) => {
 		var hoursNow = (new Date()).getHours();
-		if (6 < hoursNow && hoursNow < 12) message = "Good morning!";
+		if (hoursNow > 22 || hoursNow < 6) message = "Good night!";
+		else if (hoursNow < 12) message = "Good morning!";
 		else if (hoursNow < 18) message = "Good afternoon!";
-		else if (hoursNow < 22) message = "Good evening!";
-		else message = "Good night!";
+		else message = "Good evening!";
 		document.querySelector('h1.title').innerHTML = message;
 	}, false);
 </script>
