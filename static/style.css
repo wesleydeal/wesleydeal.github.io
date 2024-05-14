@@ -260,6 +260,7 @@ pre{
 	padding: 10px;
 	overflow: auto;
 	tab-size: 4;
+	box-shadow: 0 0 0 1px var(--color-fg);
 }
 
 code.block{
@@ -426,5 +427,12 @@ a.zola-anchor:link, a.zola-anchor:visited{
 	nav a:first-child{
 		-webkit-print-color-adjust:exact;
 		print-color-adjust:exact;
+	}
+	pre{
+		overflow-x: clip;
+		box-shadow: none;
+	}
+	pre code{
+		font-size: 8pt;
 	}
 }

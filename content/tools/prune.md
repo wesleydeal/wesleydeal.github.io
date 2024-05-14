@@ -94,7 +94,7 @@ It will report back which files would be deleted, which would be kept, and how m
 
 Now you can create a scheduled daily task, pointing to a specific path and removing the `-WhatIf` flag:
 
->Program/script: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`  
->Add arguments (optional): `-NoProfile -NonInteractive -ExecutionPolicy Bypass -File C:\Scripts\Prune-Backups.ps1 -Path "C:\ProgramData\Vendor\Backups\" -Days 7 -Weeks 4 -Months 3 -Years 2`
+>**Program/script**: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`  
+>**Add arguments (optional)**: `-NoProfile -NonInteractive -ExecutionPolicy Bypass -File C:\Scripts\Prune-Backups.ps1 -Path "C:\ProgramData\Vendor\Backups\" -Days 7 -Weeks 4 -Months 3 -Years 2`
 
 **Note:** No matter what, the most recent item in the folder will be kept. The default behavior of the script, if called with no parameters, is to keep only the most recent file.
